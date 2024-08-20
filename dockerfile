@@ -6,4 +6,4 @@ WORKDIR /opt/app
 COPY package.json package-lock.json .
 RUN npm install
 EXPOSE 8080
-CMD [ "npm", "start"]
+CMD [ "node", "server.js"]
